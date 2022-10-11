@@ -1,0 +1,712 @@
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* Resets and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: darkolivegreen;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+    pointer-events: none;
+}
+
+.logoTitle {
+    color: whitesmoke;
+    padding: 0.5rem 0;
+    pointer-events: none;
+}
+
+.logOut {
+    background-color: rgb(59, 73, 35);
+    color: whitesmoke;
+    border-style: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    cursor: pointer;
+    transition: background-color 500ms ease;
+}
+
+.logOut:hover {
+    background-color: rgb(27, 34, 16);
+}
+
+/* Title & MainContainer */
+.appTitle {
+    font-size: 5.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.mainDiv {
+    width: fit-content;
+    margin: 2rem auto 0 auto;
+}
+
+/* Form and Inputs */
+form {
+    margin: 0 auto;
+    display: flex;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputContainer label {
+    margin: 0 auto;
+}
+
+.inputContainer input {
+    height: 4rem;
+    width: 30rem;
+    border-style: none;
+    border: 2px solid black;
+    padding-left: 0.2em;
+    font-size: 1.5rem;
+}
+
+.inputContainer input:focus {
+    outline: none;
+}
+
+#inputID {
+    width: 6.1em;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+#inputProduct {
+    border-left: none;
+}
+
+#inputAmount {
+    width: 6em;
+    border-left: none;
+}
+
+.inputBtn {
+    border-style: none;
+    padding: 0 3.45rem;
+    background-color: darkolivegreen;
+    cursor: pointer;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    font-size: 2rem;
+    color: whitesmoke;
+    transition: background-color 500ms ease;
+    border: 2px solid black;
+    border-left: none;
+}
+
+.inputBtn:hover {
+    background-color: rgb(116, 146, 64);
+}
+
+/* Control Panel */
+.panelControl {
+    display: flex;
+    width: fit-content;
+    margin: 1.5rem auto 0 auto;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchFormContainer {
+    display: flex;
+    gap: 0.3rem;
+}
+
+.searchInput {
+    height: 1.5rem;
+    width: 13rem;
+    border: 2px solid black;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    padding-left: 0.2rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+.searchInput:focus {
+    outline: none;
+}
+
+.searchBtn {
+    border-style: none;
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 0 0.5rem;
+    background-color: rgb(59, 73, 35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    border-left: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    transition: background-color 500ms ease;
+}
+
+.searchBtn:hover {
+    background-color: rgb(116, 146, 64);
+}
+
+.selectDropdown {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.orderOptionsDropdown__title {
+    font-weight: bold;
+}
+
+.orderDropdownOptions__container {
+    padding: 0.1rem 0.5rem;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.orderOptionsDropdown__option {
+    padding: 0.1rem 0;
+}
+
+/* Items List */
+.itemList {
+    width: fit-content;
+    margin: 1em auto 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.itemContainer {
+    margin-bottom: 0.25em;
+    display: flex;
+}
+
+
+.itemId {
+    height: 3rem;
+    width: 9.13rem;
+    border: 2px solid black;
+    padding-left: 0.2em;
+    font-size: 1.5rem;
+    line-height: 2.72rem;
+}
+
+.itemName {
+    height: 3rem;
+    width: 30rem;
+    border: 2px solid black;
+    padding-left: 0.2em;
+    font-size: 1.5rem;
+    line-height: 2.72rem;
+    border-left: none;
+}
+
+.itemAmount {
+    width: 9rem;
+    border: 2px solid black;
+    text-align: center;
+    border-left: none;
+    font-size: 1.5rem;
+    line-height: 2.72rem;
+}
+
+.submitBtn {
+    width: 4.13rem;
+    font-size: 1.5rem;
+    background-color: cadetblue;
+    cursor: pointer;
+}
+
+.btn {
+    border-style: none;
+    color: whitesmoke;
+    padding: 0 1.5rem;
+    cursor: pointer;
+    border: 2px solid black;
+    border-left: none;
+}
+
+.btnEdit {
+    background-color: cadetblue;
+    cursor: pointer;
+    transition: background-color 500ms ease;
+}
+
+.btnEdit:hover {
+    background-color: rgb(114, 183, 185);
+}
+
+.btnDelete {
+    background-color: crimson;
+    transition: background-color 500ms ease;
+}
+
+.btnDelete:hover {
+    background-color: rgb(245, 20, 65);
+}
+
+.btnDisabled {
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* Delete everything btn */
+.emptyBtn {
+    display: block;
+    margin: 1em auto 1em auto;
+    font-size: 1.4rem;
+    border: none;
+    background-color: #777777;
+    color: whitesmoke;
+    padding: 0.9em 1em;
+    border-radius: 4px;
+    line-height: 0;
+    cursor: pointer;
+    transition: background-color 500ms ease;
+}
+
+.emptyBtn:hover {
+    background-color: #555555;
+}
+
+/* Form edit */
+.formEdit {
+    background-color: blueviolet;
+    width: 52.26rem;
+    height: 3rem;
+}
+
+/* Extra features */
+.itemFocus {
+    outline: 5px solid orange !important;
+    border-radius: 4px;
+}
+
+.modalBtn:focus {
+    box-shadow: none !important;
+}
+
+/* Media Queries */
+@media (max-width: 915px) {
+    html {
+        font-size: 0.8rem;
+    }
+
+    .logOut {
+        font-size: 1.12rem;
+    }
+
+    .inputBtn {
+        width: 8.72rem;
+    }
+
+    .itemId {
+        height: 3.25rem;
+    }
+
+    .itemName {
+        height: 3.25rem;
+    }
+
+    input.itemId,
+    input.itemName,
+    input.itemAmount {
+        height: 3.25rem;
+    }
+
+    input.itemId {
+        width: 9.1rem;
+    }
+
+    input.itemName {
+        width: 30rem;
+    }
+
+    input.itemAmount {
+        width: 9rem;
+    }
+
+    .formEdit {
+        height: 3.25rem;
+        width: 52.535rem;
+    }
+
+    .submitBtn {
+        width: 4.435rem;
+    }
+}
+
+@media (max-width: 750px) {
+    html {
+        font-size: 0.7rem;
+    }
+
+    .logoTitle {
+        font-size: 2.5rem;
+    }
+
+    .logOut {
+        font-size: 1.12rem;
+    }
+
+    .inputBtn {
+        width: 9.15rem;
+    }
+
+    .panelControl {
+        display: initial;
+    }
+
+    .userTitle {
+        margin-top: 0.4rem;
+        text-align: center;
+        font-size: 1.65rem;
+    }
+
+    .searchFormContainer {
+        width: fit-content;
+        margin: 1.3rem auto 0 auto;
+    }
+
+    .searchInput {
+        height: 2rem;
+        width: 18rem;
+    }
+
+    .selectDropdown {
+        margin-top: 2rem;
+    }
+
+    .orderOptionsDropdown__title {
+        font-size: 1.5rem;
+    }
+
+    input.itemId,
+    input.itemName,
+    input.itemAmount {
+        height: 3.25rem;
+    }
+
+    input.itemId {
+        width: 9.2rem;
+    }
+
+    input.itemName {
+        width: 30rem;
+    }
+
+    input.itemAmount {
+        width: 8.9rem;
+    }
+
+    .formEdit {
+        height: 3.25rem;
+        width: 52.74rem;
+    }
+
+    .submitBtn {
+        width: 4.64rem;
+    }
+}
+
+@media (max-width: 640px) {
+    html {
+        font-size: 0.6rem;
+    }
+
+    .inputBtn {
+        width: 9.8rem;
+    }
+
+    .itemId {
+        height: 3.2rem;
+    }
+
+    input.itemId {
+        width: 9.1rem;
+    }
+
+    .itemName {
+        height: 3.2rem;
+    }
+
+    input.itemName {
+        width: 30.4rem;
+    }
+
+    input.itemAmount {
+        width: 9.08rem;
+    }
+
+    .formEdit {
+        height: 3.25rem;
+        width: 53.002rem;
+    }
+
+    .submitBtn {
+        width: 4.9024rem;
+    }
+
+    .itemFocus {
+        outline: 4px solid orange !important;
+    }
+}
+
+@media (max-width: 550px) {
+    html {
+        font-size: 0.5rem;
+    }
+
+    .searchInput {
+        height: 2.5rem;
+        width: 25rem;
+    }
+
+    .inputBtn {
+        width: 10.460rem;
+    }
+
+    .editIcon {
+        margin: auto;
+        display: block;
+        width: 14px !important;
+    }
+
+    .trashIcon {
+        margin: auto;
+        display: block;
+        width: 14px !important;
+    }
+
+    input.itemId,
+    input.itemName,
+    input.itemAmount {
+        height: 3.25rem;
+    }
+
+    input.itemId {
+        width: 9.1rem;
+    }
+
+    input.itemName {
+        width: 30rem;
+    }
+
+    input.itemAmount {
+        width: 9rem;
+    }
+
+    .formEdit {
+        height: 3.25rem;
+        width: 53.13rem;
+    }
+
+    .submitBtn {
+        width: 5rem;
+    }
+}
+
+@media (max-width: 478px) {
+    html {
+        font-size: 0.4rem;
+    }
+
+    .logoTitle {
+        font-size: 3rem;
+    }
+
+    .logOut {
+        font-size: 1.7rem;
+    }
+
+    .userTitle {
+        font-size: 2.3rem;
+    }
+
+    .orderOptionsDropdown__title {
+        font-size: 2.25rem;
+        margin-right: 0.5rem;
+    }
+
+    .searchInput {
+        height: 3rem;
+        width: 25rem;
+    }
+
+    .searchIcon {
+        width: 12px !important;
+        width: 27rem;
+    }
+
+    .itemId {
+        height: 3.55rem;
+    }
+
+    .itemName {
+        height: 3.55rem;
+    }
+
+    .editIcon {
+        width: 12px !important;
+    }
+
+    .trashIcon {
+        width: 12px !important;
+    }
+
+    input.itemId,
+    input.itemName,
+    input.itemAmount {
+        height: 3.55rem;
+    }
+
+    input.itemId {
+        width: 9.1rem;
+    }
+
+    input.itemName {
+        width: 30.5rem;
+    }
+
+    input.itemAmount {
+        width: 9rem;
+    }
+
+    .formEdit {
+        height: 3.56rem;
+        width: 53.315rem;
+    }
+
+    .submitBtn {
+        width: 5.25rem;
+    }
+
+    .itemFocus {
+        outline: 3px solid orange !important;
+    }
+}
+
+@media (max-width: 376px) {
+    html {
+        font-size: 0.35rem;
+    }
+
+    .searchFormContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+
+    .searchInput {
+        height: 4rem;
+        width: 45rem;
+    }
+
+    .inputBtn {
+        width: 11rem;
+    }
+
+    input.itemId,
+    input.itemName,
+    input.itemAmount {
+        height: 3.55rem;
+    }
+
+    input.itemId {
+        width: 9.2rem;
+    }
+
+    input.itemName {
+        width: 30rem;
+    }
+
+    input.itemAmount {
+        width: 8.9rem;
+    }
+
+    .formEdit {
+        height: 3.56rem;
+        width: 53.64rem;
+    }
+
+    .submitBtn {
+        width: 5.5rem;
+    }
+}
+
+@media (max-width: 340px) {
+    html {
+        font-size: 0.3rem;
+    }
+
+    .inputBtn {
+        width: 11rem;
+    }
+
+    .searchIcon {
+        width: 10px !important;
+    }
+
+    .editIcon {
+        width: 10px !important;
+    }
+
+    .trashIcon {
+        width: 10px !important;
+    }
+
+    .formEdit {
+        height: 3.56rem;
+        width: 53.6rem;
+    }
+
+    input.itemId {
+        width: 9.13rem;
+    }
+
+    input.itemAmount {
+        width: 9rem;
+    }
+
+    .submitBtn {
+        width: 5.43rem;
+    }
+
+    .itemFocus {
+        outline: 2px solid orange !important;
+    }
+}

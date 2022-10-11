@@ -1,0 +1,44 @@
+[
+    {
+        "user": "Admin",
+        "pass": "admin",
+        "state": false,
+        "stock": [
+            {
+                "id": "3080",
+                "item": "Nvidia rtx 3080",
+                "stock": 180
+            },
+            {
+                "id": "6800",
+                "item": "Amd radeon 6800",
+                "stock": 95
+            },
+            {
+                "id": "7021",
+                "item": "Kingston ram 32gb",
+                "stock": 680
+            },
+            {
+                "id": "12900",
+                "item": "Intel i9",
+                "stock": 225
+            },
+            {
+                "id": "6900",
+                "item": "Amd radeon 6900",
+                "stock": 187
+            },
+            {
+                "id": "5750",
+                "item": "Amd ryzen pro 5750",
+                "stock": 200
+            },
+            {
+                "id": "5650",
+                "item": "Amd ryzen pro 5650",
+                "stock": 95
+            }
+        ]
+    }
+]
